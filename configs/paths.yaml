@@ -1,0 +1,6 @@
+env: local
+local:
+  raw: data/raw
+  silver: data/silver
+  gold: data/gold
+  models: data/models
