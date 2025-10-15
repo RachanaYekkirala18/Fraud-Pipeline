@@ -1,0 +1,34 @@
+time_col: "TransactionDT"
+amount_col: "TransactionAmt"
+label_col: "isFraud"
+
+categoricals:
+  - ProductCD
+  - card1
+  - card2
+  - card3
+  - card4
+  - card5
+  - card6
+  - addr1
+  - addr2
+  - P_emaildomain
+  - R_emaildomain
+  - DeviceType
+  - DeviceInfo
+
+rolling_keys:
+  - card1
+  - addr1
+  - P_emaildomain
+
+train:
+  random_state: 42
+  test_size: 0.2
+  xgb:
+    max_depth: 6
+    n_estimators: 500
+    learning_rate: 0.08
+    subsample: 0.9
+    colsample_bytree: 0.9
+    reg_lambda: 1.0
