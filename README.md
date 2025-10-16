@@ -16,29 +16,3 @@ This project demonstrates a production-style workflow:
 4. **Model Training** – train an XGBoost model with class-imbalance handling  
 5. **Batch Scoring** – generate daily fraud-risk scores (gold layer)  
 6. **Visualization** – Streamlit dashboard for fraud trends and high-risk transactions  
-
----
-
-## 🧱 Architecture
-
-fraud-pipeline/
-├── configs/
-│ ├── paths.yaml
-│ └── params.yaml
-├── scripts/
-│ ├── utils.py
-│ ├── spark_etl.py
-│ ├── train_xgb.py
-│ ├── batch_score.py
-│ ├── validate_data_ge.py
-├── app/
-│ └── dashboard.py
-├── data/
-│ └── raw/
-│ ├── train_transaction.csv
-│ ├── train_identity.csv
-│ ├── test_transaction.csv
-│ ├── test_identity.csv
-├── requirements.txt
-└── README.md
-
